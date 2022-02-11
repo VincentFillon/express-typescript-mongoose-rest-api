@@ -2,7 +2,7 @@
 
 <p align="center">
   <b>A Node.js RESTful API Services written in TypeScript.</b></br>
-  <span>Inspired by <a href="https://github.com/w3tecch/express-typescript-boilerplate/blob/develop/README.md">Express Typescript Boilerplate</a> from <a href="https://github.com/w3tecch">w3tecch</a></span><br/>
+  <span>Inspired by <a href="https://github.com/w3tecch/express-typescript-boilerplate">Express Typescript Boilerplate</a> from <a href="https://github.com/w3tecch">w3tecch</a></span><br/>
   <span>Some changes </span>
 </p>
 
