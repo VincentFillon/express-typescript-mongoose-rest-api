@@ -1,16 +1,16 @@
 import { model, Schema } from 'mongoose';
 import { v4 as uuidv4 } from 'uuid';
-import { GroupInterface } from '../models/Group';
-import { UserSchema } from './UserModel';
+import { PoolInterface } from '../api/models/Pool';
+import { GroupSchema } from './GroupModel';
 
 // ------------------=[ SCHEMA DEFINITION ]=------------------ //
-export const GroupSchema: Schema<GroupInterface> = new Schema<GroupInterface>(
+export const PoolSchema: Schema<PoolInterface> = new Schema<PoolInterface>(
   {
     _id: { type: String, required: true, default: uuidv4 },
     name: { type: String, required: true },
     email: String,
     avatar: String,
-    members: { type: [UserSchema] },
+    branches: { type: [GroupSchema] },
   },
   { timestamps: true }
 );
@@ -20,4 +20,4 @@ export const GroupSchema: Schema<GroupInterface> = new Schema<GroupInterface>(
 // --------------------=[ QUERY HELPERS ]=-------------------- //
 
 // -------------------=[ MODEL DEFINITION ]=------------------ //
-export const GroupModel = model<GroupInterface>('Group', GroupSchema);
+export const PoolModel = model<PoolInterface>('Pool', PoolSchema);

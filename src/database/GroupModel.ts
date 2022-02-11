@@ -1,18 +1,16 @@
 import { model, Schema } from 'mongoose';
 import { v4 as uuidv4 } from 'uuid';
-import { ProfileInterface } from '../models/Profile';
-import { PoolSchema } from './PoolModel';
+import { GroupInterface } from '../api/models/Group';
+import { UserSchema } from './UserModel';
 
 // ------------------=[ SCHEMA DEFINITION ]=------------------ //
-export const ProfileSchema: Schema<ProfileInterface> = new Schema<ProfileInterface>(
+export const GroupSchema: Schema<GroupInterface> = new Schema<GroupInterface>(
   {
     _id: { type: String, required: true, default: uuidv4 },
     name: { type: String, required: true },
-    admin: { type: Boolean, default: false },
-    director: { type: Boolean, default: false },
-    manager: { type: Boolean, default: false },
-    permissions: { type: Map, of: Boolean },
-    pool: { type: PoolSchema },
+    email: String,
+    avatar: String,
+    members: { type: [UserSchema] },
   },
   { timestamps: true }
 );
@@ -22,4 +20,4 @@ export const ProfileSchema: Schema<ProfileInterface> = new Schema<ProfileInterfa
 // --------------------=[ QUERY HELPERS ]=-------------------- //
 
 // -------------------=[ MODEL DEFINITION ]=------------------ //
-export const ProfileModel = model<ProfileInterface>('Profile', ProfileSchema);
+export const GroupModel = model<GroupInterface>('Group', GroupSchema);

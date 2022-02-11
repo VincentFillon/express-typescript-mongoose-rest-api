@@ -1,7 +1,7 @@
 import request from 'supertest';
 
 import { env } from '../../../src/env';
-import { bootstrapApp, BootstrapSettings } from '../utils/bootstrap';
+import { BootstrapSettings } from '../utils/bootstrap';
 import { prepareServer, shutdownServer } from '../utils/server'
 
 describe('/api', () => {

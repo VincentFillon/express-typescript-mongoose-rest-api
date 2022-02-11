@@ -1,8 +1,8 @@
 import * as bcrypt from 'bcrypt';
 import { CallbackError, model, Schema } from 'mongoose';
 import { v4 as uuidv4 } from 'uuid';
-import { HashingError } from '../errors/HashingError';
-import { UserInterface } from '../models/User';
+import { HashingError } from '../api/errors/HashingError';
+import { UserInterface } from '../api/models/User';
 import { ProfileSchema } from './ProfileModel';
 
 // ------------------=[ SCHEMA DEFINITION ]=------------------ //

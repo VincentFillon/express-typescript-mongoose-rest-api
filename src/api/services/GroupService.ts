@@ -1,7 +1,7 @@
 import { Service } from 'typedi';
 import { EventDispatcher, EventDispatcherInterface } from '../../decorators/EventDispatcher';
 import { Logger, LoggerInterface } from '../../decorators/Logger';
-import { GroupModel } from '../database/GroupModel';
+import { GroupModel } from '../../database/GroupModel';
 import { EntityAlreadyExistsError } from '../errors/EntityAlreadyExistsError';
 import { Group, GroupInterface } from '../models/Group';
 import { events } from '../subscribers/events';

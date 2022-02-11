@@ -1,7 +1,7 @@
 import { Service } from 'typedi';
 import { EventDispatcher, EventDispatcherInterface } from '../../decorators/EventDispatcher';
 import { Logger, LoggerInterface } from '../../decorators/Logger';
-import { PoolModel } from '../database/PoolModel';
+import { PoolModel } from '../../database/PoolModel';
 import { EntityAlreadyExistsError } from '../errors/EntityAlreadyExistsError';
 import { Pool, PoolInterface } from '../models/Pool';
 import { events } from '../subscribers/events';

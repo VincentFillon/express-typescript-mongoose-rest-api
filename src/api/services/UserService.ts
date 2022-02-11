@@ -1,7 +1,7 @@
 import { Service } from 'typedi';
 import { EventDispatcher, EventDispatcherInterface } from '../../decorators/EventDispatcher';
 import { Logger, LoggerInterface } from '../../decorators/Logger';
-import { UserModel } from '../database/UserModel';
+import { UserModel } from '../../database/UserModel';
 import { EntityAlreadyExistsError } from '../errors/EntityAlreadyExistsError';
 import { User, UserInterface } from '../models/User';
 import { events } from '../subscribers/events';
