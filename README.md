@@ -1,21 +1,13 @@
-<h1 align="center">REST CRUD API</h1>
+<h1 align="center">Express Typescript Mongoose REST API</h1>
 
 <p align="center">
   <b>A Node.js RESTful API Services written in TypeScript.</b></br>
   <span>Inspired by <a href="https://github.com/w3tecch/express-typescript-boilerplate">Express Typescript Boilerplate</a> from <a href="https://github.com/w3tecch">w3tecch</a></span><br/>
-  <span>Some changes </span>
 </p>
 
 <br />
 
 ------------------------------------
-
-## ❯ Why
-
-Our main goal with this project is a feature complete server application.
-We like you to be focused on your business and not spending hours in project configuration.
-
-Try it!! We are happy to hear your feedback or any kind of new features.
 
 ### Features
 

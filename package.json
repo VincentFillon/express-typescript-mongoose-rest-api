@@ -1,7 +1,7 @@
 {
-  "name": "rest-crud-api",
-  "version": "0.0.1",
-  "description": "RESTful CRUD API",
+  "name": "express-typescript-mongoose-rest-api",
+  "version": "0.0.2",
+  "description": "Node.js RESTful API - Express | Typescript | Mongoose",
   "main": "src/app.ts",
   "scripts": {
     "start": "nps",
