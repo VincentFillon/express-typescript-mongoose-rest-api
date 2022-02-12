@@ -62,7 +62,7 @@ yarn global add yarn
 
 Install a MySQL database.
 
-> If you work with a mac, we recommend to use homebrew for the installation.
+> If you work with a mac, it is recommended to use homebrew for the installation.
 
 ### Step 2: Create new Project
 
@@ -180,8 +180,8 @@ The swagger and the monitor route can be altered in the `.env` file.
 
 ## ❯ Logging
 
-Our logger is [winston](https://github.com/winstonjs/winston). To log http request we use the express middleware [morgan](https://github.com/expressjs/morgan).
-We created a simple annotation to inject the logger in your service (see example below).
+Used logger is [winston](https://github.com/winstonjs/winston). To log http request, the express middleware [morgan](https://github.com/expressjs/morgan) is used.
+A simple annotation has been created to inject the logger in your service (see example below).
 
 ```typescript
 import { Logger, LoggerInterface } from '../../decorators/Logger';
@@ -200,8 +200,8 @@ export class UserService {
 
 ## ❯ Event Dispatching
 
-We use this awesome repository [event-dispatch](https://github.com/pleerock/event-dispatch) for event dispatching.
-We created a simple annotation to inject the EventDispatcher in your service (see example below). All events are listed in the `events.ts` file.
+The [event-dispatch](https://github.com/pleerock/event-dispatch) repository is used for event dispatching.
+A simple annotation has been created to inject the EventDispatcher in your service (see example below). All events are listed in the `events.ts` file.
 
 ```typescript
 import { events } from '../subscribers/events';
